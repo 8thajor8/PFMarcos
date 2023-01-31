@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/feature3.png" />
     <title>Nosotros</title>
+    <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
@@ -14,29 +19,44 @@
 <!-- Navigation bar -->
 
 <header>
-    <div class="logo">
-        <img class="logo_img" src="../assets/logo.png" >
-    </div>
-    <div class="logo_link"><a href="#">OtterlySolutions</a></div>
-    
-    <nav>
-        <ul class="nav_lista">
-            <li class="nav_lista_item">
-                <a class="" href="../index.html">Home</a>
-            </li>
-            <li class="nav_lista_item">
-                <a class="" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav_lista_item">
-                <a class="" href="#">Nosotros</a>
-            </li>
-            <li class="nav_lista_item">
-                <a class="" href="sponsors.html">Sponsors</a>
-            </li>
-            <li class="nav_lista_item">
-                <a class="" href="contactenos.html">Contactenos</a>
-            </li>
-        </ul>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="logo">
+                <a class="navbar-brand" href="#"><img class="navbar-brand" src="../assets/logo.png" width="70" height="70" ></a>
+                <a  class="navbar-brand" href="#">OtterlySolutions</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Otterly!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link " aria-current="page"  href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="sponsors.html">Sponsors</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contactenos.html">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 </header>
 
@@ -88,20 +108,33 @@
 </section>
 
 <!-- Footer -->
-<footer>
-    <div  class="footerSlogan">
-        Aqui es donde pondremos el slogan.<br>
-        <strong>Esta linea tendra enfasis</strong><br>
-        <a href="#">Terminos y Condicioness</a>
-    </div>
-    
-    <div class="footerLogo">
-        <img src="../assets/logo.png" width="70" height="70">
-        <div class="">
-            <strong>Otterly</strong> Solutions
+<footer class="text-center text-lg-start bg-light  m-0">
+    <section class="footergrad">
+        <div class="container text-center text-md-start pt-5">
+            <div class="row ">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <img src="../assets/logo.png" class="footerLogo">
+                    <h6 class="fw-bold mb-4">OtterlySolutions</h6>
+                    <p class="m-0">Aqui es donde pondremos el slogan.</p>
+                    <p class="m-0"><strong>Esta linea tendra enfasis</strong></p>
+                    <a href="#">Terminos y Condicioness</a>
+                </div>
+        
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                    <p ><i class="fa-solid fa-house"></i> New York, NY 10012, US</p>
+                    <p><i class="fas fa-envelope"></i>info@example.com</p>
+                    <p><i class="fas fa-phone"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print"></i> + 01 234 567 89</p>
+                </div>
+            </div>
         </div>
-    </div>  
+    </section>
+    
+    <div class="text-center p-4" style="background-color: #396c6c;">© 2023 Copyright:<a class="text-reset fw-bold" href="#">OtterlySolutions.com</a></div>
+    
 </footer>
+<!-- Footer -->
 
 </body>
 </html>
