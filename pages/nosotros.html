@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
@@ -62,50 +62,43 @@
 
 
 <!-- Section 3: Nosotros -->
-<section class="nosotros">
-    <div class="nosotros_tittle">
-        <h2>Meet <strong>Our Team</strong></h2>
+<section id="nosotros" class="bg-light">
+  <h2 class="nosotros_tittle text-center">Meet <strong>Our Team</strong></h2>
+  <div id="nosotros_grid">
+    <div class="nosotros_member" data-aos="fade-down-right" >
+      <img src="../assets/otterson.jpg">
+      <section class="nosotros_membertext">
+        <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>-Otter Otterson</p>
+      </section>
+    </div>  
+    <div class="nosotros_member" data-aos="fade-right" >
+      <section class="nosotros_membertext">
+        <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>-Ottelius Jacobson</p>
+      </section>
+      <img src="../assets/ottelius.jpg">
+    </div>  
+    <div class="nosotros_member" data-aos="fade-up-right" >
+      <img src="../assets/ottira.jpg">
+      <section class="nosotros_membertext">
+        <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>-Ottira Otterovskovich</p>
+      </section>
+    </div>  
+    <div class="nosotros_leadership" data-aos="flip-up"  data-aos-offset="500">
+      <img src="../assets/chorchi.jpg">
+      <section class="nosotros_membermaintext text-white">
+        <p class="font-italic"><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <p>-Chorchi</p>
+      </section>
     </div>
-    <div class="nosotros_tabla">
-        
-        <div class="nosotros_boxes_members">
-            <div class="nosotros_member">
-                <img src="../assets/otterson.jpg">
-                <div class="nosotros_membertext">
-                    <p class=""><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>-Otter Otterson</p>
-                </div>
-            </div> 
-
-            <div class="nosotros_member">
-                <div class="nosotros_membertext">
-                    <p class=""><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>-Ottelius Jacobson</p>
-                </div>
-                <img src="../assets/ottelius.jpg">
-            </div>  
-
-            <div class="nosotros_member" >
-                <img src="../assets/ottira.jpg">
-                <div class="nosotros_membertext">
-                    <p class=""><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>-Ottira Otterovskovich</p>
-                </div>
-            </div> 
-        </div>
-
-        <div class="nosotros_leadership" >
-            <img src="../assets/chorchi.jpg">
-            <div class="nosotros_membertext">
-                <p class=""><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-        
-                <p>-Chorchi</p>
-            </div>
-        </div>
-    </div>
+  </div>
 </section>
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light  m-0">
@@ -135,6 +128,11 @@
     
 </footer>
 <!-- Footer -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
 
 </body>
 </html>
