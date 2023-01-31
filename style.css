@@ -5,85 +5,28 @@
    
 }
 
-header{
-    height: 80px;
-    width: 100%;
-    background-color: lightgray;
-    position: fixed;
-    padding: 20px 0px;
-    display: inline-block;
-    z-index: 3;
-}
-
-.logo{
-    
-    height: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    float: left;
-
-}
-
-.logo_img{
-    height: 100%;
-    
-}
-
-.logo_link {
-
-    display: inline-block;
-    padding-top: 35px;
-    margin-left: 20px;
-    font-weight: 600;
-    font-size: 22px;
-    
- 
- }
-
-.logo_link a{
-
-    margin-bottom: 50px;
-    text-decoration: none;
-    color: black;
-
-}
-
 nav{
-    float: right;
-    padding-top: 35px
-
+    background-color: rgb(219, 218, 218);
 }
 
-.nav_lista_item{
-    display: inline-block;
-    list-style: none;
-    padding: 0px 10px;
-    
+
+
+.nav-item{
+    padding-left: 5px;
 }
 
-.nav_lista_item a{
-    color: rgb(87, 85, 85);
-    text-decoration: none;
+.nav-item:hover{
+    background-color: rgb(121, 118, 118);
     font-weight: 600;
-    font-size: 15px;
-    padding: 8px;
+    border-radius: 10px;
 }
 
-.nav_lista_item a:hover{
-    color: black;
+#offcanvasNavbar{
+    width: 300px;
+    background-color:rgb(219, 218, 218) ;
 }
 
-.main_banner{
-    padding-top: 80px;
-    height: 100vh;
-    width: 100%;
-    background-image: url(assets/banner.jpg);
-    background-size: cover;
-    background-position: right;
-    position: relative;
-}
-
-.main_banner_overlay {
+.overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -92,32 +35,46 @@ nav{
     background:#000;
     opacity:0.4;
     z-index: 1;
-
 }
 
-.main_banner_content{
-    display: block;
-    padding: 320px 50px 50px 50%;
-    text-align: right;
-    line-height: 2;
-    color: white;
+.overlaytext{
+    position: absolute;
+    top: 45%;
+    text-align: center;
     z-index: 2;
-    position: relative;
-    text-shadow: 1px 1px 1px #666;
+    color: #fff;
+    box-align: center;
 }
 
-.main_banner_content h1{
-    font-size: 50px;
-    color: white;
-    font-weight: 300;
-
+.carousel-control-prev{
+    z-index: 3;
 }
 
-.main_banner_content p{
-    font-size: 1.25 rem;
-    margin: 10px 0px;
+.carousel-control-next{
+    z-index: 3;
+}
+
+.overtittle{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-success{
+    background-color: rgb(84,175,175);
+    border-color: rgb(84,175,175);
+}
+.carousel-inner{
+    padding-top: 80px;
     
+}
 
+@media only screen and (max-width: 576px) {
+
+    .overlaytext{
+    position: relative;
+	background-color: #a7c0da;
+    padding-top: 30px;;
+  }
 }
 
 .smaller{
@@ -125,41 +82,8 @@ nav{
 
 }
 
-.division{
-	width: 80%;
-	border-top: 2px solid white;
-    text-align: right;
-    padding-right: 0px;
-    margin: 10px 0px;
-    display: inline-block;
-	
-}
-
-.banner_button {
-    margin: 20px 0px;
-    padding: 10px 0px;
- 
- 
- 
-    
-}
-.banner_button a{
-    padding: 10px 20px;
-    border: 3px solid rgb(84,175,175);
-    border-radius: 50px;
-    text-decoration: none;
-    background-color: rgb(84,175,175);
-    color: white;
-    
-}
-
-.banner_button a:hover{
-    background-color: black;
-    border: 3px solid black;
-}
-
 .separatorbox{
-	background-color: rgb(84,175,175);
+	background-color: #2e2e2e;
     height: 140px;
     
 }
@@ -173,26 +97,18 @@ nav{
 }
 
 footer{
-	background-color: #343a40;
     color: white;
-    height: 150px;
+}
+
+.footergrad{
+    background: rgb(57,108,108);
+    background: linear-gradient(0deg, rgba(57,108,108,1) 0%, rgba(46,46,46,1) 100%);
     
 }
 
-.footerSlogan{
-	width:40%;
-    padding-top: 30px;
-    padding-left: 190px;
-    display: inline-block;
-    line-height: 1.5;
-    
-}
 .footerLogo{
 	width:30%;
-    display: inline-block;
-    text-align: right;
-    padding-top: 30px;
-    padding-right: 60px;
+ 
 }
 
 footer a, footer a:active, footer a:focus, footer a:hover {
@@ -520,7 +436,7 @@ form textarea{
     width: 90%;
 }
 
-button{
+.contactenos_form_tittle button{
 	margin-bottom: 30px;
     padding: 10px 20px;
     background-color: rgb(84,175,175, 0.7);
@@ -534,7 +450,7 @@ button{
 
 }
 
-button:hover{
+.contactenos_form_tittle button:hover{
 	
     background-color: black;
     

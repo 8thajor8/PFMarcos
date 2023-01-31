@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/feature3.png" />
     <title>OtterlySolutions</title> 
+    <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,76 +18,138 @@
 <!-- Navigation bar -->
 
     <header>
-        <div class="logo">
-            <img class="logo_img" src="assets/logo.png" >
-        </div>
-        <div class="logo_link"><a href="#">OtterlySolutions</a></div>
-        
-        <nav>
-            <ul class="nav_lista">
-                <li class="nav_lista_item">
-                    <a class="" href="#">Home</a>
-                </li>
-                <li class="nav_lista_item">
-                    <a class="" href="pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav_lista_item">
-                    <a class="" href="pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav_lista_item">
-                    <a class="" href="pages/sponsors.html">Sponsors</a>
-                </li>
-                <li class="nav_lista_item">
-                    <a class="" href="pages/contactenos.html">Contactenos</a>
-                </li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img class="navbar-brand" src="assets/logo.png" width="70" height="70" ></a>
+                    <a  class="navbar-brand" href="#">OtterlySolutions</a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Otterly!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 ">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" aria-current="page"  href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="pages/sponsors.html">Sponsors</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="pages/contactenos.html">Contactenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
 <!-- Section 1: Banners -->
-    <div class="main_banner">
-        <div class="main_banner_overlay"></div>
-        
-        <div id="" class="main_banner_content">
-            <h1 class="">Hola Mundo!</h1>
-            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tempore ut, praesentium recusandae aperiam illum maxime consectetur saepe? Perspiciatis eos sint minima nesciunt accusamus alias at ad sed possimus provident!</p>
-            <div class="division"></div>
-            <p  class="smaller">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
-                Perferendis a corrupti nobis, suscipit delectus rem.</p>
-            <div class="banner_button"><a class="" href="/pages/servicios.html" role="button">Ver mas...</a></div>
+    
+    <div id="otterCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#otterCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#otterCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#otterCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#otterCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         
+        <div class="overlay"></div>
         
-    </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/carousel1.jpg" class="d-block w-100" alt="...">
+            </div>
 
+            <div class="carousel-item">
+                <img src="assets/carousel2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/carousel3.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/carousel4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#otterCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#otterCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="overlaytext container-fluid">
+            <h1 class="display-6 mb-3">Testing a banner tittle</h1>
+            <h4 class="mb-3">Get started with your next awesome project</h4>
+            <a  href="pages/servicios.html"><button class="mb-4 buttonbanner btn btn-success btn-lg" role="button">See all features</button></a>
+        </div>
+    </div>
+       
 
 
 <!-- Separador -->
     <section class="separatorbox">
-        <div  class="separator">
-            <strong>Wait!</strong> This is a section separator text.
-        </div>                    
-       
+        <div class="container-fluid">
+            <div  class="text-center separator">
+                <strong>Wait!</strong> This is a separator section text.
+            </div>                    
+        </div>
     </section>
 
 
 
 
 <!-- Footer -->
-    <footer>
-        <div  class="footerSlogan">
-            Aqui es donde pondremos el slogan.<br>
-            <strong>Esta linea tendra enfasis</strong><br>
-            <a href="#">Terminos y Condicioness</a>
-        </div>
-        
-        <div class="footerLogo">
-            <img src="./assets/logo.png" width="70" height="70">
-            <div class="">
-                <strong>Otterly</strong> Solutions
+    <footer class="text-center text-lg-start bg-light  m-0">
+        <section class="footergrad">
+            <div class="container text-center text-md-start pt-5">
+                <div class="row ">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <img src="assets/logo.png" class="footerLogo">
+                        <h6 class="fw-bold mb-4">OtterlySolutions</h6>
+                        <p class="m-0">Aqui es donde pondremos el slogan.</p>
+                        <p class="m-0"><strong>Esta linea tendra enfasis</strong></p>
+                        <a href="#">Terminos y Condicioness</a>
+                    </div>
+            
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p ><i class="fa-solid fa-house"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope"></i>info@example.com</p>
+                        <p><i class="fas fa-phone"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
             </div>
-        </div>  
+        </section>
+        
+        <div class="text-center p-4" style="background-color: #396c6c;">© 2023 Copyright:<a class="text-reset fw-bold" href="#">OtterlySolutions.com</a></div>
+        
     </footer>
+<!-- Footer -->
 
+
+    
 </body>
 </html>
