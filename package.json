@@ -9,7 +9,7 @@
   },
   "name": "preentregamarcos",
   "version": "1.0.0",
-  "description": "PreEntrega3Marcos",
+  "description": "PreEntrega3Marcos, inclusion de SCSS y SEO",
   "main": "index.html",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -205,5 +205,5 @@
   "bugs": {
     "url": "https://github.com/8thajor8/PreEntrega3Marcos/issues"
   },
-  "homepage": "https://github.com/8thajor8/PreEntrega3Marcos#readme"
+  "homepage": "https://8thajor8.github.io/PreEntrega3Marcos/"
 }
