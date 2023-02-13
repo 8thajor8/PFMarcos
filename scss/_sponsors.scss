@@ -1,0 +1,20 @@
+
+.sponsors{
+	padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.sponsor_img {
+	width: 100%;
+	color: #000;
+	filter: gray; 
+	-webkit-filter: grayscale(1); 
+	filter: grayscale(1); 
+	padding: 8%; 
+	transition: all 0.4s linear;
+		&:hover {
+			-webkit-filter: grayscale(0);
+			filter: none;
+			transform: scale(1.03);
+		}
+}

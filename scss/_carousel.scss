@@ -1,0 +1,56 @@
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:#000;
+    opacity:0.4;
+    z-index: 1;
+}
+
+.overlaytext{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    box-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .overlaytext{
+    position: relative;
+	background-color: #a7c0da;
+    padding-top: 30px;;
+	}
+}
+
+.carousel-control-prev{
+    z-index: 3;
+}
+
+.carousel-control-next{
+    z-index: 3;
+}
+
+.overtittle{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-success{
+    background-color: $color-main;
+    border-color: $color-main;
+}
+.carousel-inner{
+    padding-top: 80px;
+    
+}
+
+.smaller{
+    font-size: 0.80rem;
+
+}

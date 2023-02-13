@@ -1,0 +1,20 @@
+footer{
+    color: white;
+}
+
+.footergrad{
+    background: rgb(57,108,108);
+    background: linear-gradient(0deg, rgba(57,108,108,1) 0%, rgba(46,46,46,1) 100%);
+    
+}
+
+.footerLogo{
+	width:30%;
+
+}
+
+footer a, footer a:active, footer a:focus, footer a:hover {
+    text-decoration: none;
+    color: #1fc8db;
+    font-size: 1.2rem;
+}
